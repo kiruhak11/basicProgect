@@ -17,12 +17,6 @@ export default defineNuxtConfig({
         '@pinia-plugin-persistedstate/nuxt',
         'frog-modal',
         '@nuxtjs/google-fonts',
-        'nuxt-swiper',
-        '@nuxtjs/device',
-        'radix-vue/nuxt',
-        'dayjs-nuxt',
-        '@morev/vue-transitions/nuxt',
-        '@nuxtjs/stylelint-module',
     ],
     device: {
         refreshOnResize: true,
@@ -53,9 +47,6 @@ export default defineNuxtConfig({
             Lato: [400],
             'Golos Text': [400, 500, 600, 700],
         },
-    },
-    swiper: {
-        styleLang: 'scss',
     },
     vite: {
         css: {
