@@ -32,25 +32,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.pyramid.left {
-    align-items: flex-start;
-}
-.pyramid.right {
-    align-items: flex-end;
+    &.left {
+        align-items: flex-start;
+    }
+    &.right {
+        align-items: flex-end;
+    }
 }
 .block {
     height: 50px;
     background-color: red;
     margin: 2px 0;
-}
-.block.small {
-    width: 50px;
-}
-.block.medium {
-    width: 100px;
-}
-.block.large {
-    width: 150px;
+    &.small {
+        width: 50px;
+    }
+    &.medium {
+        width: 100px;
+    }
+    &.large {
+        width: 150px;
+    }
 }
 </style>
