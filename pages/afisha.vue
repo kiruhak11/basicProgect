@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="poster__button">
-                            <P>Заказать билет</P>
+                            <li><NuxtLink to="/card">Заказать билет</NuxtLink></li>
                         </div>
                     </div>
                     <div class="poster">
@@ -145,6 +145,7 @@
     background-color: $cardColor;
 
     &__button {
+        list-style-type: none;
         margin-top: 126.5px;
         margin-left: 62.33px;
         display: flex;

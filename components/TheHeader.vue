@@ -12,7 +12,7 @@
                     <li><div class="dot"></div></li>
                     <li><a href="#">Заказ билетов</a></li>
                     <li><div class="dot"></div></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><NuxtLink to="/contacts">Контакты</NuxtLink></li>
                     <li><div class="dot"></div></li>
                     <li><a href="#">История дворца</a></li>
                     <li><div class="dot"></div></li>
