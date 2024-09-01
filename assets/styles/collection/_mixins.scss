@@ -1,29 +1,33 @@
-@use "./fonts" as fonts;
-@use "./functions" as functions;
-@use "./colors" as colors;
+@use './fonts' as fonts;
+@use './functions' as functions;
+@use './colors' as colors;
 
 @mixin font-load($ff, $fw, $fs, $fd, $src...) {
-    font-family: $ff;
-    src: $src;
     font-weight: $fw;
+    font-family: $ff;
     font-style: $fs;
+    src: $src;
     font-display: $fd;
 }
 
 @mixin font($name, $weight, $size, $color, $height, $style) {
-    font-family: $name;
-    font-style: $style;
+    color: $color;
     font-weight: $weight;
     font-size: functions.pxToRem($size);
-    color: $color;
+    font-family: $name;
+    font-style: $style;
 
     @if $height != 1 {
         line-height: calc($height / $size);
     }
 }
 
-@mixin mainFont($weight, $size, $color: null, $height: 1, $style: normal) {
-    @include font(fonts.$mainFont, $weight, $size, $color, $height, $style);
+@mixin firaSansFont($weight, $size, $color: null, $height: 1, $style: normal) {
+    @include font(fonts.$firaSansFont, $weight, $size, $color, $height, $style);
+}
+
+@mixin ebGaramondFont($weight, $size, $color: null, $height: 1, $style: normal) {
+    @include font(fonts.$ebGaramondFont, $weight, $size, $color, $height, $style);
 }
 
 @mixin fillFullColor($color: null) {

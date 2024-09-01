@@ -18,9 +18,6 @@ export default defineNuxtConfig({
         'frog-modal',
         '@nuxtjs/google-fonts',
     ],
-    device: {
-        refreshOnResize: true,
-    },
     piniaPersistedstate: {
         cookieOptions: {
             sameSite: 'strict',
@@ -33,19 +30,11 @@ export default defineNuxtConfig({
             yandex_api_key: process.env.YANDEX_API_KEY || '',
         },
     },
-    components: [
-        { path: '~/shared/ui', prefix: 'Ui', extensions: ['.vue'] },
-        { path: '~/shared/icons', prefix: 'Icon' },
-        { path: '~/widgets', prefix: 'Widget', extensions: ['.vue'] },
-        { path: '~/features', prefix: 'Feature', extensions: ['.vue'] },
-        { path: '~/entities', prefix: 'Entity', extensions: ['.vue'] },
-    ],
+
     googleFonts: {
         families: {
-            'Wix Madefor Text': [400, 500, 600, 700],
-            Raleway: [400, 500, 600, 700],
-            Lato: [400],
-            'Golos Text': [400, 500, 600, 700],
+            'Fira Sans': [400, 500, 600, 700],
+            'EB Garamond': [400, 500, 600, 700],
         },
     },
     vite: {
